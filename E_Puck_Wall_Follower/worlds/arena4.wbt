@@ -1,0 +1,34 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+  FPS 120
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
+  position -2.251268382554275e-05 -2.2512747483083053e-05 2.0383222076874197
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+CircleArena {
+  radius 0.5
+}
+E-puck {
+  hidden position_0_0 636.6325234039545
+  hidden position_0_1 735.3318099795639
+  hidden rotation_1 0 -1 0 4.252377928363369
+  hidden rotation_2 0 -1 0 6.084056267627306
+  translation 0.4248354183591697 -0.001839655755801089 -6.89547413799986e-05
+  rotation -0.0008847891107772885 -0.0008571755775682646 -0.9999992411988414 -1.5635543662384537
+  controller "wallFollowingFuzz"
+  turretSlot [
+    GPS {
+    }
+  ]
+}
